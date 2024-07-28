@@ -1,0 +1,29 @@
+* {
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.hand {
+    margin-right: 15px;
+    width: 110px;
+}
+
+.load-cont {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.load-cont input {
+    flex-grow: 1;
+}
+
+.config {
+    margin-top: 15px;
+}
+
+.config label {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
