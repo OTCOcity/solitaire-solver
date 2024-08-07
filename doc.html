@@ -1,32 +1,40 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Пасьянс</title>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/cardsJS/dist/cards.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/cardsJS/dist/cards.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/cardsJS/dist/cards.js" type="text/javascript"></script>
-</head>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/cardsJS/dist/cards.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript" src="./libs/dat.gui.min.js"></script>
+  </head>
 
-<body>
+  <body>
     <div id="field"></div>
-    <br>
+    <br />
     <div id="slots"></div>
-    <br>
+    <br />
     <button id="new">New game</button>
     <button id="solve">Solve</button>
     <button id="move">Next move</button>
-    <div class="load-cont">
-        <input type="text" id="load-input">
-        <button id="load">Load</button>
-    </div>
-    <div class="config">
-        <label for="config-step-click"><input type="checkbox" id="config-step-click"> Шаги по кнопке</label><br>
-    </div>
-</body>
-<script src="./index.js"></script>
+    <button id="find">Find</button>
 
+    <div class="load-cont">
+      <input type="text" id="load-input" />
+      <button id="load">Load</button>
+    </div>
+  </body>
+  <script src="./index.js"></script>
 </html>
