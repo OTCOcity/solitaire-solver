@@ -227,7 +227,7 @@ function findMoves(field, slots, backMoveHistory) {
       }
     }
   }
-  // moves.sort(() => Math.random() - 0.5);
+  moves.sort(() => Math.random() - 0.5);
   return [moves, clonedBackMoveHistory];
 }
 
@@ -423,7 +423,10 @@ var globalPath = [];
 $("#find").click(async function () {
   globalPath = [];
   let snapshot;
-  while (globalPath.length < config.findMovesCount) {
+  while (
+    globalPath.length < config.findMovesCount ||
+    gameHistory.size < 10_000
+  ) {
     console.clear();
     snapshot = await init();
     await new Promise((resolve) => setTimeout(resolve, 100));
